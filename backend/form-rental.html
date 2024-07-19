@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Rental</title>
+    <link rel="icon" type="image/png" href="/uploads/statis/LOGO-JAVORE-ROUNDED.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img src="/uploads/statis/LOGO-JAVORE-WHITE.png" alt="Logo" class="logo">
+                <h1>Add New Rental</h1>
+            </div>
+                <div class="user-info">
+                    <span id="username"></span>
+                    <button id="logout">Logout</button>
+                </div>
+                    <br><br>
+                    <a href="index-rental.html" class="btn">Back to Data Rentals</a>
+            </div>
+        </header>
+        <main>
+            <form id="rental-form" enctype="multipart/form-data">
+                <label for="nama_partner">Partner Name:</label>
+                <input type="text" id="nama_partner" name="nama_partner" required>
+                
+                <label for="deskripsi">Description:</label>
+                <textarea id="deskripsi" name="deskripsi" required></textarea>
+                
+                <label for="foto_rental">Photo:</label>
+                <input type="file" id="foto_rental" name="foto_rental" required>
+                
+                <label for="jenis">Type:</label>
+                <input type="text" id="jenis" name="jenis" required>
+                
+                <label for="lokasi">Location:</label>
+                <input type="text" id="lokasi" name="lokasi" required>
+                
+                <label for="kontak">Contact:</label>
+                <input type="text" id="kontak" name="kontak" required>
+                
+                <button type="submit">Add Rental</button>
+            </form>
+        </main>
+        <script src="form-rental.js"></script>
+    </body>
+</html>

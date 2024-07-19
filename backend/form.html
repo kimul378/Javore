@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Data Wisata</title>
+    <link rel="icon" type="image/png" href="/uploads/statis/LOGO-JAVORE-ROUNDED.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+      <div class="logo-container">
+        <img src="/uploads/statis/LOGO-JAVORE-WHITE.png" alt="Logo" class="logo">
+        <h1>Add New Data Wisata</h1>
+      </div>
+      <div class="user-info">
+        <span id="username"></span>
+        <button id="logout">Logout</button>
+    </div>
+        <br><br>
+        <a href="index.html" class="btn">Back to Data Wisata</a>
+    </header>
+    <main>
+        <form id="add-form">
+            <label for="nama_wisata">Nama Wisata</label>
+            <input type="text" id="nama_wisata" name="nama_wisata" required>
+            
+            <label for="kota">Kota</label>
+            <input type="text" id="kota" name="kota" required>
+            
+            <label for="foto_wisata">Foto Wisata</label>
+            <input type="file" id="foto_wisata" name="foto_wisata" accept="image/*" required>
+            
+            <label for="deskripsi_wisata">Deskripsi Wisata</label>
+            <textarea id="deskripsi_wisata" name="deskripsi_wisata" required></textarea>
+            
+            <label for="link_maps">Link Maps</label>
+            <input type="text" id="link_maps" name="link_maps" required>
+            
+            <label for="travel_plan">Travel Plan</label>
+            <textarea id="travel_plan" name="travel_plan" required></textarea>
+            
+            <label for="day1">Day 1</label>
+            <textarea id="day1" name="day1" required></textarea>
+            
+            <label for="day2">Day 2</label>
+            <textarea id="day2" name="day2" required></textarea>
+            
+            <label for="day3">Day 3</label>
+            <textarea id="day3" name="day3" required></textarea>
+            
+            <button type="submit">Add Data</button>
+        </form>
+    </main>
+    <footer>
+      <p>&copy; 2024 Javore. All rights reserved.</p>
+  </footer>
+    <script src="form.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
