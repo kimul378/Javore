@@ -1,0 +1,322 @@
+@media screen and (min-width: 650px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 8px 12px;
+  }
+ 
+  .app-bar .app-bar__brand h1 {
+    font-size: 1.5em;
+  }
+
+ 
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+ 
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 600px;
+  }
+ 
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+ 
+  .app-bar .app-bar__navigation ul li a {
+    /* display: inline-block; */
+    width: 120px;
+    text-align: center;
+    margin: 0;
+   }
+ 
+  .movies {
+    grid-template-columns: 1fr 1fr;
+  }
+ 
+  .movie {
+    grid-template-columns: auto 1fr;
+  }
+ 
+  .movie .movie__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+ 
+  .movie .movie__overview {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+ 
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+    
+  }
+}
+ 
+@media screen and (min-width: 850px) {
+  .movies {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+ 
+@media screen and (min-width: 1200px) {
+  .movies {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+ 
+@media screen and (min-width: 1600px) {
+  .movies {
+      grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Media Query for Desktop */
+@media (min-width: 768px) {
+.movie__header {
+  flex-direction: row;
+  width: 100%;
+}
+
+.movie__header, .movie__poster {
+  order: 0;
+  flex-direction: row;
+}
+
+.movie__poster {
+  margin: 16px 0 0 0;
+  width: 100%;
+  max-width: 800px; /* Batas lebar yang lebih kecil untuk desktop */
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+
+
+@media (min-width: 1200px) {
+.hero img {
+  width: 1000px;
+  margin: 0 auto;
+}
+}
+
+/* Responsive font sizes for hero text */
+@media (max-width: 768px) {
+.hero-text h1 {
+  font-size: 32px; 
+}
+
+.hero-text p {
+  font-size: 18px;
+}
+
+.app-bar .app-bar__brand {
+  display: flex;
+  justify-content: flex-start;
+}
+.app-bar .app-bar__navigation {
+  display: none; /* Hide navigation items */
+}
+
+.app-bar .app-bar__menu {
+  display: flex; 
+  /* margin-left: auto; */
+}
+
+.app-bar__navigation.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 55px;
+  right: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  width: auto;
+}
+
+.app-bar__navigation ul {
+  flex-direction: column;
+}
+
+.app-bar__navigation ul li {
+  margin: 0;
+}
+
+.app-bar__navigation ul li a {
+  padding: 10px;
+}
+
+}
+
+@media (max-width: 480px) {
+.hero-text h1 {
+  font-size: 24px; 
+}
+
+.hero-text p {
+  font-size: 16px;
+}
+}
+
+
+/* dari sini */
+@media only screen and (max-width: 576px) {
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section {
+  margin-top: 10px; /* Atur jarak antara setiap bagian */
+  margin-bottom: 10px;
+}
+
+.footer-image {
+  max-width: 250px;
+  height: auto;
+}
+}
+@media only screen and (min-width: 576px){
+.footer-image {
+  max-width: 150px;
+  height: auto;
+}
+}
+
+@media screen and (min-width: 768px){
+.footer-image {
+  max-width: 80%;
+  height: auto;
+  padding: 10px;
+}
+
+}
+
+@media screen and (min-width: 992px) {
+.footer-image {
+  max-width: 200px;
+  height: auto;
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+.footer-image {
+  max-width: 250px;
+  height: auto;
+}
+}
+
+@media screen and (min-width: 1600px) {
+.footer-image {
+  max-width: 300px;
+  height: auto;
+}
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+.hero-text h1 {
+  font-size: 2.5em;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+}
+}
+
+@media (max-width: 992px) {
+.hero-text h1 {
+  font-size: 2em;
+}
+
+.hero-text p {
+  font-size: 1em;
+}
+
+.destinations-grid, .travel-plan-grid {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+}
+
+@media (max-width: 768px) {
+.hero-text h1 {
+  font-size: 1.5em;
+}
+
+.hero-text p {
+  font-size: 0.9em;
+}
+
+.destination-item, .travel-plan-item, .team-member, .vision-item {
+  width: 100%;
+}
+
+.destinations-grid, .travel-plan-grid {
+  grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 576px) {
+.hero-text h1 {
+  font-size: 1.2em;
+}
+
+.hero-text p {
+  font-size: 0.8em;
+}
+
+.destinations-grid, .travel-plan-grid, .team-grid {
+  display: block;
+}
+
+.destination-item, .travel-plan-item, .team-member, .vision-item {
+  margin: 10px 0;
+}
+}
+
+
+/* destinasi */
+@media (max-width: 768px) {
+main {
+    flex-direction: column;
+}
+
+.map iframe {
+    height: 300px;
+}
+
+.contentdes {
+  flex-direction: column;
+}
+
+.description {
+  margin-right: 0;
+}
+
+aside {
+  max-width: 100%;
+}
+}
+
+
+/*destinasi*/
+@media (max-width: 768px) {
+.card {
+  width: calc(50% - 40px);
+}
+}
+
+@media (max-width: 480px) {
+.card {
+  width: calc(100% - 40px);
+}
+}
